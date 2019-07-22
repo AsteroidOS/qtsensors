@@ -88,10 +88,10 @@ public:
     static char const * const type;
 
     QHrmSensor::Status status() const;
-    void setStatus(Status status);
+    void setStatus(QHrmSensor::Status status);
 
 Q_SIGNALS:
-    void statusChanged(Status status);
+    void statusChanged(QHrmSensor::Status status);
 
 private:
     Q_DECLARE_PRIVATE(QHrmSensor)
