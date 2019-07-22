@@ -47,7 +47,6 @@ SensorfwHrmSensor::SensorfwHrmSensor(QSensor *sensor)
 {
     init();
     setReading<QHrmReading>(&m_reading);
-    sensor->setDataRate(10);//set a default rate
     m_sensor = (QHrmSensor *)sensor;
 }
 
