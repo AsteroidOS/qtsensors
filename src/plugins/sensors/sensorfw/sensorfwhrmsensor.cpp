@@ -76,7 +76,7 @@ void SensorfwHrmSensor::slotDataAvailable(const HeartRate& data)
 bool SensorfwHrmSensor::doConnect()
 {
     Q_ASSERT(m_sensorInterface);
-    return QObject::connect(m_sensorInterface, SIGNAL(HrmChanged(HeartRate)),
+    return QObject::connect(m_sensorInterface, SIGNAL(HeartRateChanged(HeartRate)),
                             this, SLOT(slotDataAvailable(HeartRate)));
 }
 
