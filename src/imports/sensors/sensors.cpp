@@ -163,8 +163,8 @@ public:
         qmlRegisterUncreatableType<QmlGyroscopeReading         >(package, major, minor, "GyroscopeReading",     QLatin1String("Cannot create GyroscopeReading"));
         qmlRegisterType           <QmlHolsterSensor            >(package, major, minor, "HolsterSensor");
         qmlRegisterUncreatableType<QmlHolsterReading           >(package, major, minor, "HolsterReading",       QLatin1String("Cannot create HolsterReading"));
-+        qmlRegisterType           <QmlHrmSensor                >(package, major, minor, "HrmSensor");
-+        qmlRegisterUncreatableType<QmlHrmSensorReading         >(package, major, minor, "HrmReading",          QLatin1String("Cannot create HrmReading"));
+        qmlRegisterType           <QmlHrmSensor                >(package, major, minor, "HrmSensor");
+        qmlRegisterUncreatableType<QmlHrmSensorReading         >(package, major, minor, "HrmReading",          QLatin1String("Cannot create HrmReading"));
         qmlRegisterType           <QmlIRProximitySensor        >(package, major, minor, "IRProximitySensor");
         qmlRegisterUncreatableType<QmlIRProximitySensorReading >(package, major, minor, "IRProximityReading",   QLatin1String("Cannot create IRProximityReading"));
         qmlRegisterType           <QmlLightSensor              >(package, major, minor, "LightSensor");
