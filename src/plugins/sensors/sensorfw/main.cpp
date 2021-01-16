@@ -50,6 +50,7 @@
 #include "sensorfwlightsensor.h"
 #include "sensorfwlidsensor.h"
 #include "sensorfwhrmsensor.h"
+#include "sensorfwstepcountersensor.h"
 
 #include <QtSensors/qsensorplugin.h>
 #include <QtSensors/qsensorbackend.h>
@@ -107,6 +108,8 @@ public:
             return new SensorfwIrProximitySensor(sensor);
         if (sensor->identifier() == SensorfwHrmSensor::id)
             return new SensorfwHrmSensor(sensor);
+        if (sensor->identifier() == SensorfwStepCounterSensor::id)
+            return new SensorfwStepCounterSensor(sensor);
         return 0;
     }
 };
