@@ -57,6 +57,7 @@
 #include <QtSensors/qtiltsensor.h>
 #include <QtSensors/qlidsensor.h>
 #include <QtSensors/qhrmsensor.h>
+#include <QtSensors/qstepcountersensor.h>
 
 #include "qmlsensorglobal.h"
 #include "qmlsensor.h"
@@ -79,6 +80,7 @@
 #include "qmlsensorgesture.h"
 #include "qmllidsensor.h"
 #include "qmlhrmsensor.h"
+#include "qmlstepcountersensor.h"
 
 static void initResources()
 {
@@ -165,6 +167,8 @@ public:
         qmlRegisterUncreatableType<QmlHolsterReading           >(package, major, minor, "HolsterReading",       QLatin1String("Cannot create HolsterReading"));
         qmlRegisterType           <QmlHrmSensor                >(package, major, minor, "HrmSensor");
         qmlRegisterUncreatableType<QmlHrmSensorReading         >(package, major, minor, "HrmReading",          QLatin1String("Cannot create HrmReading"));
+        qmlRegisterType           <QmlStepCounterSensor        >(package, major, minor, "StepCounterSensor");
+        qmlRegisterUncreatableType<QmlStepCounterSensorReading>(package, major, minor, "StepCounterReading",    QLatin1String("Cannot create StepCounterReading"));
         qmlRegisterType           <QmlIRProximitySensor        >(package, major, minor, "IRProximitySensor");
         qmlRegisterUncreatableType<QmlIRProximitySensorReading >(package, major, minor, "IRProximityReading",   QLatin1String("Cannot create IRProximityReading"));
         qmlRegisterType           <QmlLightSensor              >(package, major, minor, "LightSensor");

@@ -72,7 +72,8 @@ SENSORS=\
     qpressuresensor \
     qhumiditysensor \
     qlidsensor \
-    qhrmsensor
+    qhrmsensor \
+    qstepcountersensor
 
 for(s,SENSORS) {
     # Client API

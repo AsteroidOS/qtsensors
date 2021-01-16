@@ -11,7 +11,8 @@ HEADERS += sensorfwsensorbase.h \
     sensorfwlightsensor.h  \
     sensorfwirproximitysensor.h \
     sensorfwlidsensor.h \
-    sensorfwhrmsensor.h
+    sensorfwhrmsensor.h \
+    sensorfwstepcountersensor.h
 
 SOURCES += sensorfwsensorbase.cpp \
     sensorfwaccelerometer.cpp \
@@ -27,4 +28,5 @@ SOURCES += sensorfwsensorbase.cpp \
     sensorfwlightsensor.cpp \
     sensorfwlidsensor.cpp \
     sensorfwhrmsensor.cpp \
+    sensorfwstepcountersensor.cpp \
     main.cpp
