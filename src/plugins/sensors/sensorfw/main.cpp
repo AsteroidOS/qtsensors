@@ -51,6 +51,7 @@
 #include "sensorfwlidsensor.h"
 #include "sensorfwhrmsensor.h"
 #include "sensorfwstepcountersensor.h"
+#include "sensorfwpressuresensor.h"
 
 #include <QtSensors/qsensorplugin.h>
 #include <QtSensors/qsensorbackend.h>
@@ -110,6 +111,8 @@ public:
             return new SensorfwHrmSensor(sensor);
         if (sensor->identifier() == SensorfwStepCounterSensor::id)
             return new SensorfwStepCounterSensor(sensor);
+        if (sensor->identifier() == SensorfwPressureSensor::id)
+            return new SensorfwPressureSensor(sensor);
         return 0;
     }
 };
